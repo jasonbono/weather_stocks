@@ -1,7 +1,7 @@
 # weather_stocks
 
 
-Weather affects people's mood. Does it systematically and measurably affect the behavior of wall-street investors?
+Weather can affect people's mood. Does it systematically and measurably affect the behavior of wall-street investors?
 
 This is an exploratory analysis that looks for correlations between stock motion and changes in the weather. It is intended as a slow burn project, starting with simple analyses that grow in complexity over time.
 
@@ -37,5 +37,37 @@ These instructions will help get you a copy of the project up and running on you
 
 ## Acknowledgments
 
+* Thank you to Andy Kirou for providing helpful advice on market attributes 
 * Thank you to NOAA for providing the weather data
 
+
+
+
+## To do list
+
+### Preliminary Study
+- [x] Get ~10 years stock and local weather data
+- [x] Add clean and add basic features
+- [x] Do basic exploration of the features, adding new features as needed
+- [ ] Consider switching to / adding SPX over DJIA
+- [ ] Explore the feature space until statistical limits are reached
+- [ ] Quantify statistical significance of preliminary results
+
+### Second Study
+- [] Repeat the preliminary study with ~100 years of data
+- [ ] In addition to NYC add London and Tokyo to better approximate
+	- [ ] Possibly also add Hong Kong, Zürich, Paris
+	- [ ] Also possibly add São Paulo and Sydney
+	- [ ] Consider time dependence of the relative weighting of these cities!
+
+
+### Later Studies
+- [ ] Obtain a time dependent spacial distribution of investor location
+	- [ ] Obtain weather data for various cities, and weight features appropriately 
+- [ ] Train a neural net 
+	- [ ] separate validation and training data in two ways
+		- Interspersed time chunks (eg week/month/year level seperation)
+		- Fully randomized (ie day level separation)
+
+	- [ ] Identify an appropriate existing model for transfer learning
+		
